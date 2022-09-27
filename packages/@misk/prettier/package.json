@@ -16,11 +16,6 @@
     "prepare": "npm run-script ci-build"
   },
   "dependencies": {
-    "prettier": "1.19.1",
-    "webpack": "5.74.0",
-    "html-webpack-harddisk-plugin": "2.0.0",
-    "html-webpack-plugin": "5.5.0",
-    "css-minimizer-webpack-plugin": "4.1.0",
-    "webpack-cli": "4.10.0"
+    "prettier": "1.19.1"
   }
 }

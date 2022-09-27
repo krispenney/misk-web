@@ -8,20 +8,20 @@ dependencies:
   '@emotion/core': 10.0.28_react@16.13.1
   '@emotion/styled': 10.0.23_c989b1aa057905c7a8b69bf973f55a19
   '@redux-saga/core': 1.1.3
-  '@rush-temp/cli': file:projects/cli.tgz_745b6d603ea036f6a756c8b58b06c63e
+  '@rush-temp/cli': file:projects/cli.tgz_aa146c1a08089dc7906c85b7c842b6ea
   '@rush-temp/common': file:projects/common.tgz
   '@rush-temp/core': file:projects/core.tgz
   '@rush-temp/dev': file:projects/dev.tgz
-  '@rush-temp/misk-web-examples-data': file:projects/misk-web-examples-data.tgz_4f0677323fa455ae451ff4b71c2181fc
+  '@rush-temp/misk-web-examples-data': file:projects/misk-web-examples-data.tgz_216b0ff0e3500385d93e30aa940a995a
   '@rush-temp/misk-web-tab-dashboard': file:projects/misk-web-tab-dashboard.tgz
   '@rush-temp/misk-web-tab-palette-exemplar': file:projects/misk-web-tab-palette-exemplar.tgz
   '@rush-temp/misk-web-tab-palette-lts': file:projects/misk-web-tab-palette-lts.tgz
   '@rush-temp/misk-web-tab-starter-basic': file:projects/misk-web-tab-starter-basic.tgz
   '@rush-temp/misk-web-tab-template-basic': file:projects/misk-web-tab-template-basic.tgz
-  '@rush-temp/prettier': file:projects/prettier.tgz_4f0677323fa455ae451ff4b71c2181fc
+  '@rush-temp/prettier': file:projects/prettier.tgz_216b0ff0e3500385d93e30aa940a995a
   '@rush-temp/simpleredux': file:projects/simpleredux.tgz
-  '@rush-temp/test': file:projects/test.tgz_745b6d603ea036f6a756c8b58b06c63e
-  '@rush-temp/tslint': file:projects/tslint.tgz_4f0677323fa455ae451ff4b71c2181fc
+  '@rush-temp/test': file:projects/test.tgz_aa146c1a08089dc7906c85b7c842b6ea
+  '@rush-temp/tslint': file:projects/tslint.tgz_216b0ff0e3500385d93e30aa940a995a
   '@testing-library/dom': 7.2.2
   '@testing-library/react': 9.1.1_react-dom@16.13.1+react@16.13.1
   '@types/fs-extra': 9.0.13
@@ -7977,6 +7977,32 @@ packages:
         optional: true
     resolution:
       integrity: sha512-W6gVDXAd5hR/WHsPicvZdjAWHBcEJ44UahgxcIE196fW2ong0ZHMPO1kZuI5q0VlvMQZh32gpv69PLWQm70qrw==
+  /sass-loader/13.0.2_sass@1.43.4+webpack@5.74.0:
+    dependencies:
+      klona: 2.0.5
+      neo-async: 2.6.2
+      sass: 1.43.4
+      webpack: 5.74.0_webpack-cli@4.10.0
+    dev: false
+    engines:
+      node: '>= 14.15.0'
+    peerDependencies:
+      fibers: '>= 3.1.0'
+      node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+      sass: ^1.3.0
+      sass-embedded: '*'
+      webpack: ^5.0.0
+    peerDependenciesMeta:
+      fibers:
+        optional: true
+      node-sass:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+    resolution:
+      integrity: sha512-BbiqbVmbfJaWVeOOAu2o7DhYWtcNmTfvroVgFXa6k2hHheMxNAeDHLNoDy/Q5aoaVlz0LH+MbMktKwm9vN/j8Q==
   /sass/1.43.4:
     dependencies:
       chokidar: 3.5.3
@@ -9827,7 +9853,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
-  file:projects/cli.tgz_745b6d603ea036f6a756c8b58b06c63e:
+  file:projects/cli.tgz_aa146c1a08089dc7906c85b7c842b6ea:
     dependencies:
       '@testing-library/dom': 7.2.2
       '@testing-library/react': 9.1.1_react-dom@16.13.1+react@16.13.1
@@ -9854,6 +9880,7 @@ packages:
       prettier: 1.19.1
       progress: 2.0.3
       root-require: 0.3.1
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       shelljs: 0.8.3
       ts-jest: 24.3.0_jest@24.9.0
       tslib: 2.3.1
@@ -9867,10 +9894,11 @@ packages:
     peerDependencies:
       react: '*'
       react-dom: '*'
+      sass: '*'
       webpack-bundle-analyzer: '*'
       webpack-dev-server: '*'
     resolution:
-      integrity: sha512-o3OGE1YitqVQmORSBWpISJ3Xq8CU9JqEZe7aHsN+HCAkDrvsdCRT6oLblGfJoDRdMKYOiT2PXLIYhnAV3/hQyw==
+      integrity: sha512-zi69z3RpZb1KSiWdR+X2ZfxuULdZNPszparuokq2GIJ7IC0Kj2kBDQV3je9w35zLs8YItw8gfh1o+euttFwPog==
       tarball: file:projects/cli.tgz
     version: 0.0.0
   file:projects/common.tgz:
@@ -9928,7 +9956,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -9946,7 +9974,7 @@ packages:
     dev: false
     name: '@rush-temp/common'
     resolution:
-      integrity: sha512-lshGvbLJ57fvrUO8Udmeg0iW5rpKozI+LWdAQpxyECQqKmCMxFgk2hekZjAav97hHmB0rK9zatxTNDbZzJ8E8Q==
+      integrity: sha512-TAwIDXzSqkcjUVCrYHM2iiHCXUHERkpZmhjf1m5Lf1otJE8i0WaYuHrbrbbCbz5OtoJA2MilIy6spIe/c6nWRw==
       tarball: file:projects/common.tgz
     version: 0.0.0
   file:projects/core.tgz:
@@ -10010,7 +10038,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10027,7 +10055,7 @@ packages:
     dev: false
     name: '@rush-temp/core'
     resolution:
-      integrity: sha512-cWFBulSCcGCpIo8uneiS+wds0nbO4lqkqXzZPVVrBEWDNfnMsHB6oAlX2qwLpkOMHQFVKowaRO+uZ3kVVY1QoA==
+      integrity: sha512-d3S0snXVqaVDK7dU8ExzTtmA3Zy2TSqDT7HgEjg275BLbIfBD/X98MuIu0113CB2ltk2zTxCAPwGMNA+05mT4g==
       tarball: file:projects/core.tgz
     version: 0.0.0
   file:projects/dev.tgz:
@@ -10056,7 +10084,7 @@ packages:
       prettier: 1.19.1
       prop-types: 15.7.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       source-map-loader: 0.2.4
       style-loader: 1.2.1_webpack@5.74.0
       ts-loader: 7.0.5_typescript@3.9.10
@@ -10071,10 +10099,10 @@ packages:
     dev: false
     name: '@rush-temp/dev'
     resolution:
-      integrity: sha512-T3IlYnEvBBhuDmNBdwdHiYPV5sqQazJsjP1XcR2Hui+fRPRCeTQ8ztxiWCUF/RSAaPJfmzhC/ovN8zntbSkiJA==
+      integrity: sha512-urjfzk4NQa9kQMvrHCOt0HORvBcbKhGcCvfyrapjKHU+nNoPC45dwtFQf6kmmG4E32v8zTNlzaiylDXo/J7TJw==
       tarball: file:projects/dev.tgz
     version: 0.0.0
-  file:projects/misk-web-examples-data.tgz_4f0677323fa455ae451ff4b71c2181fc:
+  file:projects/misk-web-examples-data.tgz_216b0ff0e3500385d93e30aa940a995a:
     dependencies:
       '@types/fs-extra': 9.0.13
       '@types/node': 16.11.6
@@ -10085,6 +10113,7 @@ packages:
       html-webpack-harddisk-plugin: 2.0.0_1c8909f8548e41e15a0bc0b6475a4d8d
       html-webpack-plugin: 5.5.0_webpack@5.74.0
       prettier: 1.19.1
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       tslib: 2.3.1
       typescript: 3.9.10
       webpack: 5.74.0_webpack-cli@4.10.0
@@ -10093,10 +10122,11 @@ packages:
     id: file:projects/misk-web-examples-data.tgz
     name: '@rush-temp/misk-web-examples-data'
     peerDependencies:
+      sass: '*'
       webpack-bundle-analyzer: '*'
       webpack-dev-server: '*'
     resolution:
-      integrity: sha512-TxTRrGzcuLUaRie9dKHgo7YNYxhQrhAqfEf9porQ9fM62dr8e7eIGMu3IwWF49gouLXgwuTb2mb/8J2Wa7u1ZQ==
+      integrity: sha512-6LeSdGCFfbaaRqBADFJ/CIw/B7xWV33kPs0n92cAuBVKLGdZVlAe73HkVdrfxd1uJ7GCrZJ4YUD8AURGBO3b+Q==
       tarball: file:projects/misk-web-examples-data.tgz
     version: 0.0.0
   file:projects/misk-web-tab-dashboard.tgz:
@@ -10156,7 +10186,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10175,7 +10205,7 @@ packages:
     dev: false
     name: '@rush-temp/misk-web-tab-dashboard'
     resolution:
-      integrity: sha512-KTMNCmitNVmhN5GU4Yxma7R/IaMNFFc+kB6zjeZIQjb9t4pIp7djeDc2k5aHLH1nVwSGMAkJBl9Bj1G7WxAaUg==
+      integrity: sha512-ThgD/+O+giHd8xGN0Ne12ZNXOcGxV89j9lWcRNiLOaUCGiCC2SYTi5E0HbEa+udoJsg0brPc3TLSVZ0efasr3Q==
       tarball: file:projects/misk-web-tab-dashboard.tgz
     version: 0.0.0
   file:projects/misk-web-tab-palette-exemplar.tgz:
@@ -10238,7 +10268,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10257,7 +10287,7 @@ packages:
     dev: false
     name: '@rush-temp/misk-web-tab-palette-exemplar'
     resolution:
-      integrity: sha512-b0azKooacUPN0zDrSu7SZh6LkCfiKPbWsVOrSXIrcszL5aaxVwRcQ2ntP6lMfUs5FJLrcfMiOhNdUCjh62xMzg==
+      integrity: sha512-pt3rwpE+QXhNf9Bs0UQfgp1lJKdp1JJ5sPu4mnMTQXp15ExR1EeWQvkz0XQUjJZkaJ7m0bcNrRzEpunhw5R0IQ==
       tarball: file:projects/misk-web-tab-palette-exemplar.tgz
     version: 0.0.0
   file:projects/misk-web-tab-palette-lts.tgz:
@@ -10319,7 +10349,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10338,7 +10368,7 @@ packages:
     dev: false
     name: '@rush-temp/misk-web-tab-palette-lts'
     resolution:
-      integrity: sha512-KyuDDSaFH/EzFTsCfG53nzN8pgBPLJyMJODw80QDPD6LDXVGrH+euQDFqE+zZmERYoQ4B8b03eAa8W6GGj0xYw==
+      integrity: sha512-d8IFDz0cJ58kaT6Xg1a+06Sro2zdfPhw8oERADMvlqTsWiS0hgsaT5s4gQ3TKJ2afKGHtm8fvuhY7/OllZnQmg==
       tarball: file:projects/misk-web-tab-palette-lts.tgz
     version: 0.0.0
   file:projects/misk-web-tab-starter-basic.tgz:
@@ -10401,7 +10431,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10420,7 +10450,7 @@ packages:
     dev: false
     name: '@rush-temp/misk-web-tab-starter-basic'
     resolution:
-      integrity: sha512-a/KeI+ueFNlqbp5VB5RaskutxHOgcX2002jyZEjuoK2v3We3DyGo3POwibJzwPbtjL19SQMs3Kc3K91unaHTVg==
+      integrity: sha512-N0YuPoiWLyeOcAOjLRPNb/dW6NFzrG7PcDpX6bKiFy/u+7GAvqWVylG+yJQAO2uDSBCJOnRsK6wFT/UhWeuEDQ==
       tarball: file:projects/misk-web-tab-starter-basic.tgz
     version: 0.0.0
   file:projects/misk-web-tab-template-basic.tgz:
@@ -10483,7 +10513,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10502,25 +10532,27 @@ packages:
     dev: false
     name: '@rush-temp/misk-web-tab-template-basic'
     resolution:
-      integrity: sha512-OESYnGJuuf/attXKH8vR/7n37juQ7DS9o8JH86Q0v+Bz5znv8g6YI7vEYgc6S4sJ/+2aQIXQGBPbNpRNVcDOaw==
+      integrity: sha512-9vg5+8cot8vjTX9bOWKXqukdy5FYHSQs6CUaIrVzR+KE6eoyH9aAgfKj5ojE7sKkIEe/vCqswaDbrBrG+zQu+A==
       tarball: file:projects/misk-web-tab-template-basic.tgz
     version: 0.0.0
-  file:projects/prettier.tgz_4f0677323fa455ae451ff4b71c2181fc:
+  file:projects/prettier.tgz_216b0ff0e3500385d93e30aa940a995a:
     dependencies:
       css-minimizer-webpack-plugin: 4.1.0_webpack@5.74.0
       html-webpack-harddisk-plugin: 2.0.0_1c8909f8548e41e15a0bc0b6475a4d8d
       html-webpack-plugin: 5.5.0_webpack@5.74.0
       prettier: 1.19.1
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       webpack: 5.74.0_webpack-cli@4.10.0
       webpack-cli: 4.10.0_f89edebbf3ea484ce90e230101438dc6
     dev: false
     id: file:projects/prettier.tgz
     name: '@rush-temp/prettier'
     peerDependencies:
+      sass: '*'
       webpack-bundle-analyzer: '*'
       webpack-dev-server: '*'
     resolution:
-      integrity: sha512-FbmqiYveTqkZFKkUkluQ0T8/HH4tzA7dPkdkrhupDV+nG+m2WutfDlO9b4RN8IRBD3YhsWFoCD+UBnFH1uhpxw==
+      integrity: sha512-oXXCMf+Ryd9OE/oPP1QrS+KOiML3gBzfNskvvmCqkEPAwl8c7xdiHNeYqlNNsOj2O9MT8JrYVuh/6oxxvg1P/w==
       tarball: file:projects/prettier.tgz
     version: 0.0.0
   file:projects/simpleredux.tgz:
@@ -10582,7 +10614,7 @@ packages:
       redux-saga: 1.1.3
       reselect: 4.1.2
       sass: 1.43.4
-      sass-loader: 10.1.1_sass@1.43.4+webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       skeleton-css: 2.0.4
       source-map-loader: 0.2.4
       status-code-enum: 1.0.0
@@ -10601,10 +10633,10 @@ packages:
     dev: false
     name: '@rush-temp/simpleredux'
     resolution:
-      integrity: sha512-Z4T4UorZicQG9TSRM3mgbW05fr83zPy1HUpHLCRD5N5DAjYScDed76NkJvUTIEqUJgF8nj//KwlJvoTfB52GAQ==
+      integrity: sha512-ZpUS/xJh7EEJ/WhOj6xodOH2QvilYc12j+FNgIqMZXksv+vE+kYn7joGF+tTt8Qeu3VBwmcrv/HjuICtRqsGdA==
       tarball: file:projects/simpleredux.tgz
     version: 0.0.0
-  file:projects/test.tgz_745b6d603ea036f6a756c8b58b06c63e:
+  file:projects/test.tgz_aa146c1a08089dc7906c85b7c842b6ea:
     dependencies:
       '@testing-library/dom': 7.2.2
       '@testing-library/react': 9.1.1_react-dom@16.13.1+react@16.13.1
@@ -10616,6 +10648,7 @@ packages:
       jest: 24.9.0
       jest-emotion: 10.0.14
       jest-serializer-html: 7.1.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       ts-jest: 24.3.0_jest@24.9.0
       tslib: 2.3.1
       typescript: 3.9.10
@@ -10627,17 +10660,19 @@ packages:
     peerDependencies:
       react: '*'
       react-dom: '*'
+      sass: '*'
       webpack-bundle-analyzer: '*'
       webpack-dev-server: '*'
     resolution:
-      integrity: sha512-RXI738LQu8elNfBeG4wm+BqLaMe7DvhXf95wM0X+C+ZQKNaT27cBPiy29R7i8LxH45D1Ze9s85Z/IzlHazZ+aQ==
+      integrity: sha512-UDFtmnNjpsPGKL2Yudy3mAmE5XnQQqD0bPNffyYrOvxKVHIdrlElpBOJlcWBi2DycPP2dxYh8WX5Jmm5ItxNdQ==
       tarball: file:projects/test.tgz
     version: 0.0.0
-  file:projects/tslint.tgz_4f0677323fa455ae451ff4b71c2181fc:
+  file:projects/tslint.tgz_216b0ff0e3500385d93e30aa940a995a:
     dependencies:
       css-minimizer-webpack-plugin: 4.1.0_webpack@5.74.0
       html-webpack-harddisk-plugin: 2.0.0_1c8909f8548e41e15a0bc0b6475a4d8d
       html-webpack-plugin: 5.5.0_webpack@5.74.0
+      sass-loader: 13.0.2_sass@1.43.4+webpack@5.74.0
       tslint: 5.20.1_typescript@3.9.10
       tslint-blueprint: 0.1.0
       tslint-clean-code: 0.2.10_tslint@5.20.1+typescript@3.9.10
@@ -10654,10 +10689,11 @@ packages:
     id: file:projects/tslint.tgz
     name: '@rush-temp/tslint'
     peerDependencies:
+      sass: '*'
       webpack-bundle-analyzer: '*'
       webpack-dev-server: '*'
     resolution:
-      integrity: sha512-hWQajA35fCsKXctULhZIbIpiUB0De34GVbS8hAG+/eR6xr5NIeq1dSHr6mIckDH/OSmpgwC92lUfuyOwogLC8A==
+      integrity: sha512-qVHHypSTjQZBUjPe4pBfYs61eTxExgwraquSrJv+fCEfjvipRkhY2/GqWX6G5FkMZPdeWLQvwDPeIVYNmO9oPA==
       tarball: file:projects/tslint.tgz
     version: 0.0.0
 specifiers:
