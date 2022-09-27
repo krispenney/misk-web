@@ -50,7 +50,8 @@
     "re-reselect": "3.4.0",
     "skeleton-css": "2.0.4",
     "status-code-enum": "1.0.0",
-    "styled-components": "4.4.1"
+    "styled-components": "4.4.1",
+    "css-minimizer-webpack-plugin": "4.1.0"
   },
   "devDependencies": {
     "@misk/cli": "0.4.0",
@@ -78,12 +79,11 @@
     "css-loader": "3.5.3",
     "file-loader": "6.0.0",
     "html-parser": "0.11.0",
-    "html-webpack-harddisk-plugin": "1.0.1",
-    "html-webpack-plugin": "3.2.0",
+    "html-webpack-harddisk-plugin": "2.0.0",
+    "html-webpack-plugin": "5.5.0",
     "jest": "24.9.0",
     "jest-serializer-html": "7.1.0",
     "mini-css-extract-plugin": "0.12.0",
-    "optimize-css-assets-webpack-plugin": "5.0.8",
     "prettier": "1.19.1",
     "prop-types": "15.7.2",
     "sass": "1.43.4",
@@ -95,8 +95,8 @@
     "tslib": "2.3.1",
     "typescript": "3.9.10",
     "typescript-plugin-styled-components": "1.4.4",
-    "webpack": "4.43.0",
-    "webpack-cli": "3.3.11",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0",
     "webpack-bundle-analyzer": "3.7.0",
     "webpack-dev-server": "4.4.0",
     "webpack-merge": "4.2.2"
